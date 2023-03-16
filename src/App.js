@@ -3,6 +3,7 @@ import Main from "./components/Main";
 import Basket from "./components/Basket";
 import data from "./data";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const { products } = data;
@@ -45,7 +46,9 @@ function App() {
           cartItems={cartItems}
         ></Basket>
       </div>
-      <footer className="block">All Rights reserved, Kenza Ait gana</footer>
+      <footer className='block'>
+        <Footer />
+      </footer>
     </div>
   );
 }
